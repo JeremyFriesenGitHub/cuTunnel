@@ -1,5 +1,8 @@
-// init environment 
+import cytoscape from "cytoscape";
+
+// init environment
 var cy = cytoscape({
+  // eslint-disable-next-line no-undef
   container: document.getElementById("cy"),
   style: [
     {
@@ -11,10 +14,9 @@ var cy = cytoscape({
   ],
 });
 
-
 //add nodes and edges
 cy.add({
-    group: 'nodes',
-    data: { id: 'test'},
-    position: { x: 300, y: 300 }
+  group: "nodes",
+  data: { id: "test" },
+  position: { x: 300, y: 300 },
 });
