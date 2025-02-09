@@ -14,7 +14,7 @@ var cy = cytoscape({
   ],
 });
 
-//add nodes and edges
+// add nodes and edges
 cy.add([
   {
     group: "nodes",
