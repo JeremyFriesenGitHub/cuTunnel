@@ -2,7 +2,6 @@
 
 // init environment
 var cy = cytoscape({
-  // eslint-disable-next-line no-undef
   container: document.getElementById("cy"),
   style: [
     {
