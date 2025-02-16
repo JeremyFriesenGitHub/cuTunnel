@@ -21,9 +21,10 @@
     "clean": "rimraf dist",
     "build:css": "cleancss -o dist/style.css style.css",
     "build:js": "terser test.js -o dist/test.js --compress --mangle",
-    "build:html": "copyfiles index.html dist",
+    "build:html": "copyfiles test.html dist",
     "build:assets": "copyfiles -u 1 assets/**/* dist",
-    "build": "npm run clean && npm run build:css && npm run build:js && npm run build:html && npm run build:assets"
+    "build": "npm run clean && npm run build:css && npm run build:js && npm run build:html && npm run build:assets",
+    "build:azure": "npm run build"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
