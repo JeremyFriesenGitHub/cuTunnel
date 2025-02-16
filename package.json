@@ -13,7 +13,8 @@
   },
   "scripts": {
     "prepare": "husky",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "build": "echo 'No build step needed' && exit 0"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
