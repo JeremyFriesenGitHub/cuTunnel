@@ -262,6 +262,13 @@ var cy = cytoscape({
     },
     // magenta edges
     {
+      selector: "edge#e39",
+      style: {
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
+      },
+    },
+    {
       selector: "edge#e41",
       style: {
         "line-color": "magenta",
