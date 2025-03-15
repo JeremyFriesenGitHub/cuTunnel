@@ -66,6 +66,26 @@ cy.add([
     position: { x: 150, y: 835 },
   },
   {
+    group: "nodes",
+    data: { id: "Herzberg Labs" },
+    position: { x: 415, y: 830 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Steacie2" },
+    position: { x: 510, y: 830 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Richcraft" },
+    position: { x: 510, y: 860 },
+  },
+  {
+    group: "nodes",
+    data: { id: "UC (Level 4)" },
+    position: { x: 465, y: 640 },
+  },
+  {
     group: "edges",
     data: { id: "e0", source: "VSIM", target: "Loeb" },
   },
@@ -108,5 +128,21 @@ cy.add([
   {
     group: "edges",
     data: { id: "e10", source: "Southam", target: "Southam2" },
+  },
+  {
+    group: "edges",
+    data: { id: "e11", source: "Steacie", target: "Herzberg Labs" },
+  },
+  {
+    group: "edges",
+    data: { id: "e12", source: "Herzberg Labs", target: "Steacie2" },
+  },
+  {
+    group: "edges",
+    data: { id: "e13", source: "Steacie2", target: "Richcraft" },
+  },
+  {
+    group: "edges",
+    data: { id: "e14", source: "UC (Level 4)", target: "Steacie" },
   },
 ]);
