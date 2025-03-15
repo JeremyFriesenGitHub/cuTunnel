@@ -143,17 +143,22 @@ cy.add([
   },
   {
     group: "nodes",
+    data: { id: "Tory bdg" },
+    position: { x: 313, y: 521 },
+  },
+  {
+    group: "nodes",
     data: { id: "UC (Level 1)" },
     position: { x: 378, y: 454 },
   },
   {
     group: "nodes",
-    data: { id: "Architechture Building" },
+    data: { id: "Architechture bdg" },
     position: { x: 431, y: 454 },
   },
   {
     group: "nodes",
-    data: { id: "Nicol Building" },
+    data: { id: "Nicol bdg" },
     position: { x: 510, y: 438 },
   },
   {
@@ -193,7 +198,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Leeds Maintenance Building" },
+    data: { id: "Leeds Maintenance bdg" },
     position: { x: 592, y: 492 },
   },
   {
@@ -213,7 +218,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Nesbitt Biology\nBuilding" },
+    data: { id: "Nesbitt Biology bdg" },
     position: { x: 677, y: 590 },
   },
   {
@@ -223,12 +228,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Canal Building" },
+    data: { id: "Canal bdg" },
     position: { x: 407, y: 402 },
   },
   {
     group: "nodes",
-    data: { id: "Mackenzie Building" },
+    data: { id: "Mackenzie bdg" },
     position: { x: 432, y: 380 },
   },
   {
@@ -307,6 +312,11 @@ cy.add([
     position: { x: 367, y: 522 },
   },
   {
+    group: "nodes",
+    data: { id: "Ramp" },
+    position: { x: 272, y: 522 },
+  },
+  {
     group: "edges",
     data: { id: "e0", source: "VSIM", target: "Loeb" },
   },
@@ -374,4 +384,61 @@ cy.add([
     group: "edges",
     data: { id: "e16", source: "Southam2", target: "Southam3" },
   },
+  {
+    group: "edges",
+    data: { id: "e17", source: "MacOdrum Library", target: "Dunton Tower" },
+  },
+  {
+    group: "edges",
+    data: { id: "e18", source: "Dunton Tower", target: "Azrieli Pavilion" },
+  },
+  {
+    group: "edges",
+    data: { id: "e19", source: "Azrieli Pavilion", target: "Azrieli Theater" },
+  },
+  {
+    group: "edges",
+    data: { id: "e20", source: "Azrieli Theater", target: "Tory bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e21", source: "Tory bdg", target: "UC (Level 4)" },
+  },
+  {
+    group: "edges",
+    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)" },
+  },
+  {
+    group: "edges",
+    data: { id: "e23", source: "UC (Level 1)", target: "Ramp" },
+  },
+  {
+    group: "edges",
+    data: { id: "e24", source: "UC (Level 1)", target: "Architechture bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e25", source: "Nicol bdg", target: "Architechture bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e26", source: "Canal bdg", target: "Architechture bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e27", source: "Mackenzie bdg", target: "Architechture bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e28", source: "Mackenzie bdg", target: "Canal bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e29", source: "Southam3", target: "Paterson Hall" },
+  },
+  {
+    group: "edges",
+    data: { id: "e30", source: "A-Stairs", target: "Paterson Hall" },
+  },
+  
 ]);
