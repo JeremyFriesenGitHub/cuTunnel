@@ -72,6 +72,56 @@ cy.add([
   },
   {
     group: "nodes",
+    data: { id: "Lennox/Addington House" },
+    position: { x: 544, y: 244 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Glengarry/Russel Grenville House" },
+    position: { x: 581, y: 203 },
+  },
+  {
+    group: "nodes",
+    data: { id: "St.Patricks/Stormont Dundas House" },
+    position: { x: 627, y: 157 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Leeds House" },
+    position: { x: 631, y: 61 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Leeds Maintenance Building" },
+    position: { x: 592, y: 492 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Athletics Alumni Hall Fieldhouse Ice House" },
+    position: { x: 711, y: 388 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Athletics Alumni Hall\nFieldhouse Ice House" },
+    position: { x: 711, y: 388 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Carleton Technology &\nTraining Center" },
+    position: { x: 642, y: 539 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Nesbitt Biology\nBuilding" },
+    position: { x: 677, y: 590 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Robertson Hall" },
+    position: { x: 568, y: 665 },
+  },
+  {
+    group: "nodes",
     data: { id: "Canal Building" },
     position: { x: 407, y: 402 },
   },
@@ -114,6 +164,11 @@ cy.add([
     group: "nodes",
     data: { id: "Southam" },
     position: { x: 110, y: 835 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Paterson Hall" },
+    position: { x: 231, y: 539 },
   },
   {
     group: "nodes",
