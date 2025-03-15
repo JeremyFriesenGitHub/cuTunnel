@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "dependencies": {
+    "clean-css-cli": "^5.6.3",
+    "copyfiles": "^2.4.1",
+    "cytoscape": "^3.31.0",
+    "rimraf": "^6.0.1",
+    "terser": "^5.39.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.4.2"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint . --fix",
+    "clean": "rimraf dist",
+    "build:css": "cleancss -o dist/style.css style.css",
+    "build:js": "terser test.js -o dist/test.js --compress --mangle",
+    "build:html": "copyfiles index.html dist",
+    "build:assets": "copyfiles -u 1 assets/**/* dist",
+    "build": "npm run clean && npm run build:css && npm run build:js && npm run build:html && npm run build:assets",
+    "build:azure": "npm run build"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
