@@ -10,6 +10,14 @@ var cy = cytoscape({
         label: "data(id)",
       },
     },
+    // Orange edges
+    {
+      selector: "edge#e16",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "orange",
+      },
+    },
     {
       selector: "edge#e6",
       style: {
@@ -32,6 +40,28 @@ var cy = cytoscape({
       },
     },
     {
+      selector: "edge#e9",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "orange",
+      },
+    },
+    {
+      selector: "edge#e7",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "",
+      },
+    },
+    // Blue edges
+    {
+      selector: "edge#e3",
+      style: {
+        "line-color": "blue",
+        "target-arrow-color": "blue",
+      },
+    },
+    {
       selector: "edge#e1",
       style: {
         "line-color": "blue",
@@ -45,6 +75,7 @@ var cy = cytoscape({
         "target-arrow-color": "blue",
       },
     },
+    // Red edges
     {
       selector: "edge#e13",
       style: {
@@ -343,9 +374,4 @@ cy.add([
     group: "edges",
     data: { id: "e16", source: "Southam2", target: "Southam3" },
   },
-  {
-    group: "edges",
-    data: { id: "e17", source: "Southam2", target: "Southam3" },
-  },
-  
 ]);
