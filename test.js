@@ -175,6 +175,70 @@ var cy = cytoscape({
         "target-arrow-color": "purple",
       },
     },
+    //Green Edges
+    {
+      selector: "edge#e31",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e32",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e33",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e34",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e35",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e36",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e37",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e44",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
+    {
+      selector: "edge#e45",
+      style: {
+        "line-color": "green",
+        "target-arrow-color": "green",
+      },
+    },
   ],
 });
 
@@ -484,10 +548,6 @@ cy.add([
   {
     group: "edges",
     data: { id: "e30", source: "A-Stairs", target: "Paterson Hall" },
-  },
-  {
-    group: "edges",
-    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
   },
   {
     group: "edges",
