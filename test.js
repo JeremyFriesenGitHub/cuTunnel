@@ -119,37 +119,37 @@ cy.add([
   {
     group: "nodes",
     data: { id: "VSIM" },
-    position: { x: 90, y: 870 },
+    position: { x: 73, y: 709 },
   },
   {
     group: "nodes",
     data: { id: "MacOdrum Library" },
-    position: { x: 179, y: 522 },
+    position: { x: 167, y: 531 },
   },
   {
     group: "nodes",
     data: { id: "Dunton Tower" },
-    position: { x: 206, y: 522 },
+    position: { x: 206, y: 508 },
   },
   {
     group: "nodes",
     data: { id: "Azrieli Pavilion" },
-    position: { x: 253, y: 522 },
+    position: { x: 253, y: 508 },
   },
   {
     group: "nodes",
     data: { id: "Azrieli Theater" },
-    position: { x: 285, y: 522 },
+    position: { x: 285, y: 508 },
   },
   {
     group: "nodes",
     data: { id: "UC (Level 1)" },
-    position: { x: 350, y: 438 },
+    position: { x: 378, y: 454 },
   },
   {
     group: "nodes",
     data: { id: "Architechture Building" },
-    position: { x: 433, y: 438 },
+    position: { x: 431, y: 454 },
   },
   {
     group: "nodes",
