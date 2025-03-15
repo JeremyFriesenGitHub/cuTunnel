@@ -529,4 +529,12 @@ cy.add([
     group: "edges",
     data: { id: "e43", source: "Carleton Tech & Training Center", target: "Alumni Hall Fieldhouse" },
   },
+  {
+    group: "edges",
+    data: { id: "e44", source: "Renfew/Prescott", target: "Minto Case" },
+  },
+  {
+    group: "edges",
+    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington" },
+  },
 ]);
