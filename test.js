@@ -141,13 +141,8 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Azrieli Pavilion" },
-    position: { x: 253, y: 508 },
-  },
-  {
-    group: "nodes",
-    data: { id: "Azrieli Theater" },
-    position: { x: 285, y: 508 },
+    data: { id: "Azrieli Theater/Pavilion" },
+    position: { x: 265, y: 508 },
   },
   {
     group: "nodes",
@@ -176,27 +171,27 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Renfew/Prescott House" },
+    data: { id: "Renfew/Prescott" },
     position: { x: 531, y: 308 },
   },
   {
     group: "nodes",
-    data: { id: "Frontenac/Lanark House" },
+    data: { id: "Frontenac/Lanark" },
     position: { x: 487, y: 308 },
   },
   {
     group: "nodes",
-    data: { id: "Lennox/Addington House" },
+    data: { id: "Lennox/Addington" },
     position: { x: 544, y: 244 },
   },
   {
     group: "nodes",
-    data: { id: "Glengarry/Russel Grenville House" },
+    data: { id: "Glengarry/Russel Grenville" },
     position: { x: 581, y: 203 },
   },
   {
     group: "nodes",
-    data: { id: "St.Patricks/Stormont Dundas House" },
+    data: { id: "St.Patricks/Stormont Dundas" },
     position: { x: 627, y: 157 },
   },
   {
@@ -212,11 +207,6 @@ cy.add([
   {
     group: "nodes",
     data: { id: "Athletics Alumni Hall Fieldhouse Ice House" },
-    position: { x: 711, y: 388 },
-  },
-  {
-    group: "nodes",
-    data: { id: "Athletics Alumni Hall\nFieldhouse Ice House" },
     position: { x: 711, y: 388 },
   },
   {
@@ -320,11 +310,6 @@ cy.add([
     position: { x: 367, y: 522 },
   },
   {
-    group: "nodes",
-    data: { id: "Ramp" },
-    position: { x: 272, y: 522 },
-  },
-  {
     group: "edges",
     data: { id: "e0", source: "VSIM", target: "Loeb" },
   },
@@ -398,15 +383,11 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e18", source: "Dunton Tower", target: "Azrieli Pavilion" },
+    data: { id: "e18", source: "Dunton Tower", target: "Azrieli Theater/Pavilion" },
   },
   {
     group: "edges",
-    data: { id: "e19", source: "Azrieli Pavilion", target: "Azrieli Theater" },
-  },
-  {
-    group: "edges",
-    data: { id: "e20", source: "Azrieli Theater", target: "Tory bdg" },
+    data: { id: "e20", source: "Azrieli Theater/Pavilion", target: "Tory bdg" },
   },
   {
     group: "edges",
@@ -418,7 +399,7 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e23", source: "UC (Level 1)", target: "Ramp" },
+    data: { id: "e23", source: "UC (Level 1)", target: "Azrieli Theater/Pavilion" },
   },
   {
     group: "edges",
@@ -448,5 +429,28 @@ cy.add([
     group: "edges",
     data: { id: "e30", source: "A-Stairs", target: "Paterson Hall" },
   },
-  
+  {
+    group: "edges",
+    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
+  },
+  {
+    group: "edges",
+    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
+  },
+  {
+    group: "edges",
+    data: { id: "e32", source: "Frontenac/Lanark", target: "Minto Case" },
+  },
+  {
+    group: "edges",
+    data: { id: "e33", source: "Frontenac/Lanark", target: "Renfew/Prescott" },
+  },
+  {
+    group: "edges",
+    data: { id: "e34", source: "Frontenac/Lanark", target: "Lennox/Addington" },
+  },
+  {
+    group: "edges",
+    data: { id: "e35", source: "Glengarry/Russel Grenville", target: "Lennox/Addington" },
+  },
 ]);
