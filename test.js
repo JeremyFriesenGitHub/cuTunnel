@@ -10,6 +10,20 @@ var cy = cytoscape({
         label: "data(id)",
       },
     },
+    {
+      selector: "edge#e6",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "orange",
+    },
+  },
+  {
+    selector: "edge#e10",
+    style: {
+      "line-color": "orange",
+      "target-arrow-color": "orange",
+    },
+  },
   ],
 });
 
