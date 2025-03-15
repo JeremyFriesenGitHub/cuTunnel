@@ -239,33 +239,33 @@ var cy = cytoscape({
         "target-arrow-color": "green",
       },
     },
-    // Pink edges
+    // magenta edges
     {
       selector: "edge#e41",
       style: {
-        "line-color": "pink",
-        "target-arrow-color": "pink",
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
       },
     },
     {
       selector: "edge#e40",
       style: {
-        "line-color": "pink",
-        "target-arrow-color": "pink",
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
       },
     },
     {
       selector: "edge#e42",
       style: {
-        "line-color": "pink",
-        "target-arrow-color": "pink",
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
       },
     },
     {
       selector: "edge#e43",
       style: {
-        "line-color": "pink",
-        "target-arrow-color": "pink",
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
       },
     },
   ],
