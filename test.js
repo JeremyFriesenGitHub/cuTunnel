@@ -12,6 +12,18 @@ var cy = cytoscape({
         "border-width": 1,
       },
     },
+    {
+      selector: "edge#e23",
+      style: {
+        "line-style": "dashed",
+      },
+    },
+    {
+      selector: "edge#e4",
+      style: {
+        "line-style": "dotted",
+      },
+    },
     // Orange edges
     {
       selector: "edge#e16",
