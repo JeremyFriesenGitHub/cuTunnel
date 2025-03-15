@@ -19,6 +19,24 @@ var cy = cytoscape({
       },
     },
     {
+      selector: ".shortest-path",
+      style: {
+        "line-color": "black",
+      },
+    },
+    {
+      selector: ".start",
+      style: {
+        backgroundColor: "green",
+      },
+    },
+    {
+      selector: ".end",
+      style: {
+        backgroundColor: "red",
+      },
+    },
+    {
       selector: "edge#e23",
       style: {
         "line-style": "dashed",
@@ -31,6 +49,13 @@ var cy = cytoscape({
       },
     },
     // Orange edges
+    {
+      selector: "edge#e46",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "orange",
+      },
+    },
     {
       selector: "edge#e16",
       style: {
@@ -88,6 +113,13 @@ var cy = cytoscape({
       },
     },
     // Blue edges
+    {
+      selector: "edge#e0",
+      style: {
+        "line-color": "blue",
+        "target-arrow-color": "blue",
+      },
+    },
     {
       selector: "edge#e3",
       style: {
@@ -160,6 +192,13 @@ var cy = cytoscape({
       },
     },
     // Purple edges
+    {
+      selector: "edge#e20",
+      style: {
+        "line-color": "purple",
+        "target-arrow-color": "purple",
+      },
+    },
     {
       selector: "edge#e15",
       style: {
@@ -246,6 +285,13 @@ var cy = cytoscape({
       },
     },
     // magenta edges
+    {
+      selector: "edge#e39",
+      style: {
+        "line-color": "magenta",
+        "target-arrow-color": "magenta",
+      },
+    },
     {
       selector: "edge#e41",
       style: {
@@ -538,7 +584,11 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e18", source: "Dunton Tower", target: "Azrieli Theater/Pavilion" },
+    data: {
+      id: "e18",
+      source: "Dunton Tower",
+      target: "Azrieli Theater/Pavilion",
+    },
   },
   {
     group: "edges",
@@ -554,7 +604,11 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e23", source: "UC (Level 1)", target: "Azrieli Theater/Pavilion" },
+    data: {
+      id: "e23",
+      source: "UC (Level 1)",
+      target: "Azrieli Theater/Pavilion",
+    },
   },
   {
     group: "edges",
@@ -602,15 +656,27 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e35", source: "Glengarry/Russel Grenville", target: "Lennox/Addington" },
+    data: {
+      id: "e35",
+      source: "Glengarry/Russel Grenville",
+      target: "Lennox/Addington",
+    },
   },
   {
     group: "edges",
-    data: { id: "e36", source: "Glengarry/Russel Grenville", target: "St.Patricks/Stormont Dundas" },
+    data: {
+      id: "e36",
+      source: "Glengarry/Russel Grenville",
+      target: "St.Patricks/Stormont Dundas",
+    },
   },
   {
     group: "edges",
-    data: { id: "e37", source: "Leeds House", target: "St.Patricks/Stormont Dundas" },
+    data: {
+      id: "e37",
+      source: "Leeds House",
+      target: "St.Patricks/Stormont Dundas",
+    },
   },
   {
     group: "edges",
@@ -618,23 +684,43 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e39", source: "Maintenance bdg", target: "Carleton Tech & Training Center" },
+    data: {
+      id: "e39",
+      source: "Maintenance bdg",
+      target: "Carleton Tech & Training Center",
+    },
   },
   {
     group: "edges",
-    data: { id: "e40", source: "Nesbitt Biology bdg", target: "Carleton Tech & Training Center" },
+    data: {
+      id: "e40",
+      source: "Nesbitt Biology bdg",
+      target: "Carleton Tech & Training Center",
+    },
   },
   {
     group: "edges",
-    data: { id: "e41", source: "Nesbitt Biology bdg", target: "Robertson Hall" },
+    data: {
+      id: "e41",
+      source: "Nesbitt Biology bdg",
+      target: "Robertson Hall",
+    },
   },
   {
     group: "edges",
-    data: { id: "e42", source: "Maintenance bdg", target: "Alumni Hall Fieldhouse" },
+    data: {
+      id: "e42",
+      source: "Maintenance bdg",
+      target: "Alumni Hall Fieldhouse",
+    },
   },
   {
     group: "edges",
-    data: { id: "e43", source: "Carleton Tech & Training Center", target: "Alumni Hall Fieldhouse" },
+    data: {
+      id: "e43",
+      source: "Carleton Tech & Training Center",
+      target: "Alumni Hall Fieldhouse",
+    },
   },
   {
     group: "edges",
@@ -646,6 +732,59 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e46", source: "A-Stairs", target: "Azrieli Theater/Pavilion", weight: 27.5 },
+    data: {
+      id: "e46",
+      source: "A-Stairs",
+      target: "Azrieli Theater/Pavilion",
+      weight: 27.5,
+    },
   },
 ]);
+
+var startNode = null;
+var endNode = null;
+
+// Node click event
+cy.on("tap", "node", function (evt) {
+  var node = evt.target;
+
+  if (!startNode) {
+    startNode = node;
+    node.addClass("start");
+  } else if (!endNode && node !== startNode) {
+    endNode = node;
+    node.addClass("end");
+    findShortestPath();
+  } else {
+    clearSelection();
+  }
+});
+
+cy.on("tap", function (evt) {
+  if (evt.target === cy) {
+    clearSelection();
+  }
+});
+
+function findShortestPath() {
+  if (!startNode || !endNode) return;
+
+  var dijkstra = cy.elements().dijkstra({
+    root: startNode,
+    weight: function (edge) {
+      return edge.data("weight") || 1;
+    },
+  });
+
+  var path = dijkstra.pathTo(endNode);
+
+  if (path.length > 0) {
+    path.addClass("shortest-path");
+  }
+}
+
+function clearSelection() {
+  cy.elements().removeClass("shortest-path start end");
+  startNode = null;
+  endNode = null;
+}
