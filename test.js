@@ -181,6 +181,11 @@ cy.add([
   },
   {
     group: "nodes",
+    data: { id: "Southam3" },
+    position: { x: 130, y: 539 },
+  },
+  {
+    group: "nodes",
     data: { id: "Paterson Hall" },
     position: { x: 231, y: 539 },
   },
@@ -274,4 +279,17 @@ cy.add([
     group: "edges",
     data: { id: "e14", source: "UC (Level 4)", target: "Steacie" },
   },
+  {
+    group: "edges",
+    data: { id: "e15", source: "MacOdrum Library", target: "Southam3" },
+  },
+  {
+    group: "edges",
+    data: { id: "e16", source: "Southam2", target: "Southam3" },
+  },
+  {
+    group: "edges",
+    data: { id: "e17", source: "Southam2", target: "Southam3" },
+  },
+  
 ]);
