@@ -22,6 +22,66 @@ cy.add([
   },
   {
     group: "nodes",
+    data: { id: "MacOdrum Library" },
+    position: { x: 179, y: 522 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Dunton Tower" },
+    position: { x: 206, y: 522 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Azrieli Pavilion" },
+    position: { x: 253, y: 522 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Azrieli Theater" },
+    position: { x: 285, y: 522 },
+  },
+  {
+    group: "nodes",
+    data: { id: "UC (Level 1)" },
+    position: { x: 350, y: 438 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Architechture Building" },
+    position: { x: 433, y: 438 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Nicol Building" },
+    position: { x: 510, y: 438 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Minto Case" },
+    position: { x: 510, y: 379 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Renfew/Prescott House" },
+    position: { x: 531, y: 308 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Frontenac/Lanark House" },
+    position: { x: 487, y: 308 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Canal Building" },
+    position: { x: 407, y: 402 },
+  },
+  {
+    group: "nodes",
+    data: { id: "Mackenzie Building" },
+    position: { x: 432, y: 380 },
+  },
+  {
+    group: "nodes",
     data: { id: "Loeb" },
     position: { x: 135, y: 870 },
   },
