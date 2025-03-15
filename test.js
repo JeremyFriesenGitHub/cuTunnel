@@ -57,6 +57,11 @@ cy.add([
   },
   {
     group: "nodes",
+    data: { id: "Southam2" },
+    position: { x: 110, y: 755 },
+  },
+  {
+    group: "nodes",
     data: { id: "Kali Theatre" },
     position: { x: 150, y: 835 },
   },
@@ -95,5 +100,13 @@ cy.add([
   {
     group: "edges",
     data: { id: "e8", source: "Kali Theatre", target: "Southam" },
+  },
+  {
+    group: "edges",
+    data: { id: "e9", source: "Kali Theatre", target: "Southam2" },
+  },
+  {
+    group: "edges",
+    data: { id: "e10", source: "Southam", target: "Southam2" },
   },
 ]);
