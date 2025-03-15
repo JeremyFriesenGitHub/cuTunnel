@@ -638,4 +638,8 @@ cy.add([
     group: "edges",
     data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington" },
   },
+  {
+    group: "edges",
+    data: { id: "e46", source: "A-Stairs", target: "Azrieli Theater/Pavilion", weight: 27.5 },
+  },
 ]);
