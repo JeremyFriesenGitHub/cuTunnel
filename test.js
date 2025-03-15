@@ -26,6 +26,13 @@ var cy = cytoscape({
     },
     // Orange edges
     {
+      selector: "edge#e46",
+      style: {
+        "line-color": "orange",
+        "target-arrow-color": "orange",
+      },
+    },
+    {
       selector: "edge#e16",
       style: {
         "line-color": "orange",
@@ -82,6 +89,13 @@ var cy = cytoscape({
       },
     },
     // Blue edges
+    {
+      selector: "edge#e0",
+      style: {
+        "line-color": "blue",
+        "target-arrow-color": "blue",
+      },
+    },
     {
       selector: "edge#e3",
       style: {
@@ -154,6 +168,13 @@ var cy = cytoscape({
       },
     },
     // Purple edges
+    {
+      selector: "edge#e20",
+      style: {
+        "line-color": "purple",
+        "target-arrow-color": "purple",
+      },
+    },
     {
       selector: "edge#e15",
       style: {
