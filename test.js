@@ -245,17 +245,17 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Leeds Maintenance bdg" },
+    data: { id: "Maintenance bdg" },
     position: { x: 592, y: 492 },
   },
   {
     group: "nodes",
-    data: { id: "Athletics Alumni Hall Fieldhouse Ice House" },
+    data: { id: "Alumni Hall Fieldhouse" },
     position: { x: 711, y: 388 },
   },
   {
     group: "nodes",
-    data: { id: "Carleton Technology &\nTraining Center" },
+    data: { id: "Carleton Tech & Training Center" },
     position: { x: 642, y: 539 },
   },
   {
@@ -496,5 +496,37 @@ cy.add([
   {
     group: "edges",
     data: { id: "e35", source: "Glengarry/Russel Grenville", target: "Lennox/Addington" },
+  },
+  {
+    group: "edges",
+    data: { id: "e36", source: "Glengarry/Russel Grenville", target: "St.Patricks/Stormont Dundas" },
+  },
+  {
+    group: "edges",
+    data: { id: "e37", source: "Leeds House", target: "St.Patricks/Stormont Dundas" },
+  },
+  {
+    group: "edges",
+    data: { id: "e38", source: "Nicol bdg", target: "Maintenance bdg" },
+  },
+  {
+    group: "edges",
+    data: { id: "e39", source: "Maintenance bdg", target: "Carleton Tech & Training Center" },
+  },
+  {
+    group: "edges",
+    data: { id: "e40", source: "Nesbitt Biology bdg", target: "Carleton Tech & Training Center" },
+  },
+  {
+    group: "edges",
+    data: { id: "e41", source: "Nesbitt Biology bdg", target: "Robertson Hall" },
+  },
+  {
+    group: "edges",
+    data: { id: "e42", source: "Maintenance bdg", target: "Alumni Hall Fieldhouse" },
+  },
+  {
+    group: "edges",
+    data: { id: "e43", source: "Carleton Tech & Training Center", target: "Alumni Hall Fieldhouse" },
   },
 ]);
