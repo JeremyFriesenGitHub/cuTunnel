@@ -24,6 +24,62 @@ var cy = cytoscape({
       "target-arrow-color": "orange",
     },
   },
+  {
+    selector: "edge#e8",
+    style: {
+      "line-color": "orange",
+      "target-arrow-color": "orange",
+    },
+  },
+  {
+    selector: "edge#e1",
+    style: {
+      "line-color": "blue",
+      "target-arrow-color": "blue",
+    },
+  },
+  {
+    selector: "edge#e2",
+    style: {
+      "line-color": "blue",
+      "target-arrow-color": "blue",
+    },
+  },
+  {
+    selector: "edge#e13",
+    style: {
+      "line-color": "red",
+      "target-arrow-color": "red",
+    },
+  },
+  {
+    selector: "edge#e12",
+    style: {
+      "line-color": "red",
+      "target-arrow-color": "red",
+    },
+  },
+  {
+    selector: "edge#e5",
+    style: {
+      "line-color": "red",
+      "target-arrow-color": "red",
+    },
+  },
+  {
+    selector: "edge#e11",
+    style: {
+      "line-color": "red",
+      "target-arrow-color": "red",
+    },
+  },
+  {
+    selector: "edge#e14",
+    style: {
+      "line-color": "red",
+      "target-arrow-color": "red",
+    },
+  },
   ],
 });
 
