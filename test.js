@@ -111,6 +111,14 @@ var cy = cytoscape({
         "target-arrow-color": "red",
       },
     },
+    // Purple edges
+    {
+      selector: "edge#e15",
+      style: {
+        "line-color": "purple",
+        "target-arrow-color": "purple",
+      },
+    },
   ],
 });
 
