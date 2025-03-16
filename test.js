@@ -15,7 +15,7 @@ var cy = cytoscape({
     {
       selector: "edge",
       style: {
-        "width":5,        
+        width: 5,
       },
     },
     {
@@ -514,147 +514,178 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e0", source: "VSIM", target: "Loeb" },
+    data: { id: "e0", source: "VSIM", target: "Loeb", weight: 5.5 },
   },
   {
     group: "edges",
-    data: { id: "e1", source: "Loeb", target: "ARISE" },
+    data: { id: "e1", source: "Loeb", target: "ARISE", weight: 16.5 },
   },
   {
     group: "edges",
-    data: { id: "e2", source: "ARISE", target: "B-Stairs" },
+    data: { id: "e2", source: "ARISE", target: "B-Stairs", weight: 53 },
   },
   {
     group: "edges",
-    data: { id: "e3", source: "B-Stairs", target: "Steacie" },
+    data: { id: "e3", source: "B-Stairs", target: "Steacie", weight: 21.2 },
   },
   {
     group: "edges",
-    data: { id: "e4", source: "B-Stairs", target: "A-Stairs" },
+    data: { id: "e4", source: "B-Stairs", target: "A-Stairs", weight: 7.7 },
   },
   {
     group: "edges",
-    data: { id: "e5", source: "Steacie", target: "Health Sciences" },
+    data: {
+      id: "e5",
+      source: "Steacie",
+      target: "Health Sciences",
+      weight: 8.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e6", source: "Loeb", target: "Southam" },
+    data: { id: "e6", source: "Loeb", target: "Southam", weight: 13.5 },
   },
   {
     group: "edges",
-    data: { id: "e7", source: "Loeb", target: "Kali Theatre" },
+    data: { id: "e7", source: "Loeb", target: "Kali Theatre", weight: 13.5 },
   },
   {
     group: "edges",
-    data: { id: "e8", source: "Kali Theatre", target: "Southam" },
+    data: { id: "e8", source: "Kali Theatre", target: "Southam", weight: 22.3 },
   },
   {
     group: "edges",
-    data: { id: "e9", source: "Kali Theatre", target: "Southam2" },
+    data: { id: "e9", source: "Kali Theatre", target: "Southam2", weight: 33 },
   },
   {
     group: "edges",
-    data: { id: "e10", source: "Southam", target: "Southam2" },
+    data: { id: "e10", source: "Southam", target: "Southam2", weight: 10.2 },
   },
   {
     group: "edges",
-    data: { id: "e11", source: "Steacie", target: "Herzberg Labs" },
+    data: {
+      id: "e11",
+      source: "Steacie",
+      target: "Herzberg Labs",
+      weight: 24.5,
+    },
   },
   {
     group: "edges",
-    data: { id: "e12", source: "Herzberg Labs", target: "Steacie2" },
+    data: {
+      id: "e12",
+      source: "Herzberg Labs",
+      target: "Steacie2",
+      weight: 25.7,
+    },
   },
   {
     group: "edges",
-    data: { id: "e13", source: "Steacie2", target: "Richcraft" },
+    data: { id: "e13", source: "Steacie2", target: "Richcraft", weight: 11 },
   },
   {
     group: "edges",
-    data: { id: "e14", source: "UC (Level 4)", target: "Steacie" },
+    data: {
+      id: "e14",
+      source: "UC (Level 4)",
+      target: "Steacie",
+      weight: 31.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e15", source: "MacOdrum Library", target: "Southam3" },
+    data: {
+      id: "e15",
+      source: "MacOdrum Library",
+      target: "Southam3",
+      weight: 37.5,
+    },
   },
   {
     group: "edges",
-    data: { id: "e16", source: "Southam2", target: "Southam3" },
+    data: { id: "e16", source: "Southam2", target: "Southam3", weight: 4.7 },
   },
   {
     group: "edges",
-    data: { id: "e17", source: "MacOdrum Library", target: "Dunton Tower" },
+    data: {
+      id: "e17",
+      source: "MacOdrum Library",
+      target: "Dunton Tower",
+      weight: 12.73,
+    },
   },
   {
     group: "edges",
     data: {
       id: "e18",
       source: "Dunton Tower",
-      target: "Azrieli Tht/Pav",
+      target: "Azrieli Theater/Pavilion",
+      weight: 24.2,
     },
   },
   {
     group: "edges",
-    data: { id: "e20", source: "Azrieli Tht/Pav", target: "Tory Bldg",  },
+    data: { id: "e20", source: "Azrieli Theater/Pavilion", target: "Tory bdg" },
   },
   {
     group: "edges",
-    data: { id: "e21", source: "Tory Bldg", target: "UC (Level 4)" },
+    data: { id: "e21", source: "Tory bdg", target: "UC (Level 4)" },
   },
   {
     group: "edges",
-    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)" },
+    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)", weight: 8.1 },
   },
   {
     group: "edges",
     data: {
       id: "e23",
       source: "UC (Level 1)",
-      target: "Azrieli Tht/Pav",
+      target: "Azrieli Theater/Pavilion",
     },
   },
   {
     group: "edges",
-    data: { id: "e24", source: "UC (Level 1)", target: "Archit. Bldg" },
+    data: { id: "e24", source: "UC (Level 1)", target: "Architechture bdg" },
   },
   {
     group: "edges",
-    data: { id: "e25", source: "Nicol Bldg", target: "Archit. Bldg" },
+    data: { id: "e25", source: "Nicol bdg", target: "Architechture bdg" },
   },
   {
     group: "edges",
-    data: { id: "e26", source: "Canal Bldg", target: "Archit. Bldg" },
+    data: { id: "e26", source: "Canal bdg", target: "Architechture bdg" },
   },
   {
     group: "edges",
-    data: { id: "e27", source: "Mackenzie Bldg", target: "Archit. Bldg" },
+    data: { id: "e27", source: "Mackenzie bdg", target: "Architechture bdg" },
   },
   {
     group: "edges",
-    data: { id: "e28", source: "Mackenzie Bldg", target: "Canal Bldg" },
+    data: { id: "e28", source: "Mackenzie bdg", target: "Canal bdg" },
   },
   {
     group: "edges",
-    data: { id: "e29", source: "Southam3", target: "Paterson Hall" },
+    data: { id: "e29", source: "Southam3", target: "Paterson Hall", weight: 30.2},
   },
   {
     group: "edges",
-    data: { id: "e30", source: "A-Stairs", target: "Paterson Hall" },
+    data: { id: "e30", source: "A-Stairs", target: "Paterson Hall", weight: 15.4 },
   },
   {
     group: "edges",
-    data: { id: "e31", source: "Nicol Bldg", target: "Minto Case" },
+    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
   },
   {
     group: "edges",
-    data: { id: "e32", source: "Frontenac/Lanark", target: "Minto Case" },
+    data: { id: "e32", source: "Frontenac/Lanark", target: "Minto Case", weight: 26.4},
   },
   {
     group: "edges",
-    data: { id: "e33", source: "Frontenac/Lanark", target: "Renfew/Prescott" },
+    data: { id: "e33", source: "Frontenac/Lanark", target: "Renfew/Prescott", weight: 4.4},
   },
   {
     group: "edges",
-    data: { id: "e34", source: "Frontenac/Lanark", target: "Lennox/Addington" },
+    data: { id: "e34", source: "Frontenac/Lanark", target: "Lennox/Addington", weight: 19.8},
   },
   {
     group: "edges",
@@ -662,6 +693,7 @@ cy.add([
       id: "e35",
       source: "Glengarry/Russel Grenville",
       target: "Lennox/Addington",
+      weight: 2.9,
     },
   },
   {
@@ -670,6 +702,7 @@ cy.add([
       id: "e36",
       source: "Glengarry/Russel Grenville",
       target: "St.Patricks/Stormont Dundas",
+      weight: 17.2,
     },
   },
   {
@@ -678,11 +711,12 @@ cy.add([
       id: "e37",
       source: "Leeds House",
       target: "St.Patricks/Stormont Dundas",
+      weight: 35.5,
     },
   },
   {
     group: "edges",
-    data: { id: "e38", source: "Nicol Bldg", target: "Maintenance Bldg" },
+    data: { id: "e38", source: "Nicol bdg", target: "Maintenance bdg" },
   },
   {
     group: "edges",
@@ -690,6 +724,7 @@ cy.add([
       id: "e39",
       source: "Maintenance Bldg",
       target: "Carleton Tech & Training Center",
+      weight: 35.7,
     },
   },
   {
@@ -698,6 +733,7 @@ cy.add([
       id: "e40",
       source: "Nesbitt Biology Bldg",
       target: "Carleton Tech & Training Center",
+      weight: 18.3,
     },
   },
   {
@@ -706,6 +742,7 @@ cy.add([
       id: "e41",
       source: "Nesbitt Biology Bldg",
       target: "Robertson Hall",
+      weight: 54.7,
     },
   },
   {
@@ -714,6 +751,7 @@ cy.add([
       id: "e42",
       source: "Maintenance Bldg",
       target: "Alumni Hall Fieldhouse",
+      weight: 83.1,
     },
   },
   {
@@ -722,15 +760,16 @@ cy.add([
       id: "e43",
       source: "Carleton Tech & Training Center",
       target: "Alumni Hall Fieldhouse",
+      weight: 77,
     },
   },
   {
     group: "edges",
-    data: { id: "e44", source: "Renfew/Prescott", target: "Minto Case" },
+    data: { id: "e44", source: "Renfew/Prescott", target: "Minto Case", weight: 26},
   },
   {
     group: "edges",
-    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington" },
+    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington", weight: 23.5},
   },
   {
     group: "edges",
