@@ -349,7 +349,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Tory bdg" },
+    data: { id: "Tory Bldg" },
     position: { x: 366, y: 631 },
   },
   {
@@ -359,12 +359,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Archit. bdg" },
+    data: { id: "Archit. Bldg" },
     position: { x: 507, y: 517 },
   },
   {
     group: "nodes",
-    data: { id: "Nicol bdg" },
+    data: { id: "Nicol Bldg" },
     position: { x: 591, y: 517 },
   },
   {
@@ -404,7 +404,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Maintenance bdg" },
+    data: { id: "Maintenance Bldg" },
     position: { x: 647, y: 621 },
   },
   {
@@ -419,7 +419,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Nesbitt Biology bdg" },
+    data: { id: "Nesbitt Biology Bldg" },
     position: { x: 730, y: 817 },
   },
   {
@@ -429,12 +429,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Canal bdg" },
+    data: { id: "Canal Bldg" },
     position: { x: 443, y: 433 },
   },
   {
     group: "nodes",
-    data: { id: "Mackenzie bdg" },
+    data: { id: "Mackenzie Bldg" },
     position: { x: 502, y: 388 },
   },
   {
@@ -594,11 +594,11 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e20", source: "Azrieli Tht/Pav", target: "Tory bdg",  },
+    data: { id: "e20", source: "Azrieli Tht/Pav", target: "Tory Bldg",  },
   },
   {
     group: "edges",
-    data: { id: "e21", source: "Tory bdg", target: "UC (Level 4)" },
+    data: { id: "e21", source: "Tory Bldg", target: "UC (Level 4)" },
   },
   {
     group: "edges",
@@ -614,23 +614,23 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e24", source: "UC (Level 1)", target: "Archit. bdg" },
+    data: { id: "e24", source: "UC (Level 1)", target: "Archit. Bldg" },
   },
   {
     group: "edges",
-    data: { id: "e25", source: "Nicol bdg", target: "Archit. bdg" },
+    data: { id: "e25", source: "Nicol Bldg", target: "Archit. Bldg" },
   },
   {
     group: "edges",
-    data: { id: "e26", source: "Canal bdg", target: "Archit. bdg" },
+    data: { id: "e26", source: "Canal Bldg", target: "Archit. Bldg" },
   },
   {
     group: "edges",
-    data: { id: "e27", source: "Mackenzie bdg", target: "Archit. bdg" },
+    data: { id: "e27", source: "Mackenzie Bldg", target: "Archit. Bldg" },
   },
   {
     group: "edges",
-    data: { id: "e28", source: "Mackenzie bdg", target: "Canal bdg" },
+    data: { id: "e28", source: "Mackenzie Bldg", target: "Canal Bldg" },
   },
   {
     group: "edges",
@@ -642,7 +642,7 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
+    data: { id: "e31", source: "Nicol Bldg", target: "Minto Case" },
   },
   {
     group: "edges",
@@ -682,13 +682,13 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e38", source: "Nicol bdg", target: "Maintenance bdg" },
+    data: { id: "e38", source: "Nicol Bldg", target: "Maintenance Bldg" },
   },
   {
     group: "edges",
     data: {
       id: "e39",
-      source: "Maintenance bdg",
+      source: "Maintenance Bldg",
       target: "Carleton Tech & Training Center",
     },
   },
@@ -696,7 +696,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e40",
-      source: "Nesbitt Biology bdg",
+      source: "Nesbitt Biology Bldg",
       target: "Carleton Tech & Training Center",
     },
   },
@@ -704,7 +704,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e41",
-      source: "Nesbitt Biology bdg",
+      source: "Nesbitt Biology Bldg",
       target: "Robertson Hall",
     },
   },
@@ -712,7 +712,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e42",
-      source: "Maintenance bdg",
+      source: "Maintenance Bldg",
       target: "Alumni Hall Fieldhouse",
     },
   },
