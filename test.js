@@ -15,7 +15,7 @@ var cy = cytoscape({
     {
       selector: "edge",
       style: {
-        "width":5,        
+        width: 5,
       },
     },
     {
@@ -516,31 +516,36 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e1", source: "Loeb", target: "ARISE", weight: 16.5},
+    data: { id: "e1", source: "Loeb", target: "ARISE", weight: 16.5 },
   },
   {
     group: "edges",
-    data: { id: "e2", source: "ARISE", target: "B-Stairs", weight: 53},
+    data: { id: "e2", source: "ARISE", target: "B-Stairs", weight: 53 },
   },
   {
     group: "edges",
-    data: { id: "e3", source: "B-Stairs", target: "Steacie", weight: 21.2},
+    data: { id: "e3", source: "B-Stairs", target: "Steacie", weight: 21.2 },
   },
   {
     group: "edges",
-    data: { id: "e4", source: "B-Stairs", target: "A-Stairs", weight: 7.7},
+    data: { id: "e4", source: "B-Stairs", target: "A-Stairs", weight: 7.7 },
   },
   {
     group: "edges",
-    data: { id: "e5", source: "Steacie", target: "Health Sciences", weight: 8.8},
+    data: {
+      id: "e5",
+      source: "Steacie",
+      target: "Health Sciences",
+      weight: 8.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e6", source: "Loeb", target: "Southam", weight: 13.5},
+    data: { id: "e6", source: "Loeb", target: "Southam", weight: 13.5 },
   },
   {
     group: "edges",
-    data: { id: "e7", source: "Loeb", target: "Kali Theatre", weight: 13.5},
+    data: { id: "e7", source: "Loeb", target: "Kali Theatre", weight: 13.5 },
   },
   {
     group: "edges",
@@ -548,7 +553,7 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e9", source: "Kali Theatre", target: "Southam2", weight: 33},
+    data: { id: "e9", source: "Kali Theatre", target: "Southam2", weight: 33 },
   },
   {
     group: "edges",
@@ -556,67 +561,132 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e11", source: "Steacie", target: "Herzberg Labs", weight: 24.5 },
+    data: {
+      id: "e11",
+      source: "Steacie",
+      target: "Herzberg Labs",
+      weight: 24.5,
+    },
   },
   {
     group: "edges",
-    data: { id: "e12", source: "Herzberg Labs", target: "Steacie2", weight: 25.7 },
+    data: {
+      id: "e12",
+      source: "Herzberg Labs",
+      target: "Steacie2",
+      weight: 25.7,
+    },
   },
   {
     group: "edges",
-    data: { id: "e13", source: "Steacie2", target: "Richcraft", weight: 11},
+    data: { id: "e13", source: "Steacie2", target: "Richcraft", weight: 11 },
   },
   {
     group: "edges",
-    data: { id: "e14", source: "UC (Level 4)", target: "Steacie", weight: 31.8},
+    data: {
+      id: "e14",
+      source: "UC (Level 4)",
+      target: "Steacie",
+      weight: 31.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e15", source: "MacOdrum Library", target: "Southam3", weight: 37.5},
+    data: {
+      id: "e15",
+      source: "MacOdrum Library",
+      target: "Southam3",
+      weight: 37.5,
+    },
   },
   {
     group: "edges",
-    data: { id: "e16", source: "Southam2", target: "Southam3", weight: 4.7},
+    data: { id: "e16", source: "Southam2", target: "Southam3", weight: 4.7 },
   },
   {
     group: "edges",
-    data: { id: "e17", source: "MacOdrum Library", target: "Dunton Tower", weight: 12.73},
+    data: {
+      id: "e17",
+      source: "MacOdrum Library",
+      target: "Dunton Tower",
+      weight: 12.73,
+    },
   },
   {
     group: "edges",
-    data: { id: "e18", source: "Dunton Tower", target: "Azrieli Theater/Pavilion", weight: 24.2},
+    data: {
+      id: "e18",
+      source: "Dunton Tower",
+      target: "Azrieli Theater/Pavilion",
+      weight: 24.2,
+    },
   },
   {
     group: "edges",
-    data: { id: "e20", source: "Azrieli Theater/Pavilion", target: "Tory bdg", weight: 15},
+    data: {
+      id: "e20",
+      source: "Azrieli Theater/Pavilion",
+      target: "Tory bdg",
+      weight: 15,
+    },
   },
   {
     group: "edges",
-    data: { id: "e21", source: "Tory bdg", target: "UC (Level 4)", weight: 19.8},
+    data: {
+      id: "e21",
+      source: "Tory bdg",
+      target: "UC (Level 4)",
+      weight: 19.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)", weight: },
+    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)" },
   },
   {
     group: "edges",
-    data: { id: "e23", source: "UC (Level 1)", target: "Azrieli Theater/Pavilion", weight: 8.1},
+    data: {
+      id: "e23",
+      source: "UC (Level 1)",
+      target: "Azrieli Theater/Pavilion",
+      weight: 8.1,
+    },
   },
   {
     group: "edges",
-    data: { id: "e24", source: "UC (Level 1)", target: "Architechture bdg", weight: 30.2},
+    data: {
+      id: "e24",
+      source: "UC (Level 1)",
+      target: "Architechture bdg",
+      weight: 30.2,
+    },
   },
   {
     group: "edges",
-    data: { id: "e25", source: "Nicol bdg", target: "Architechture bdg", weight: 28.1},
+    data: {
+      id: "e25",
+      source: "Nicol bdg",
+      target: "Architechture bdg",
+      weight: 28.1,
+    },
   },
   {
     group: "edges",
-    data: { id: "e26", source: "Canal bdg", target: "Architechture bdg", weight: 18.3},
+    data: {
+      id: "e26",
+      source: "Canal bdg",
+      target: "Architechture bdg",
+      weight: 18.3,
+    },
   },
   {
     group: "edges",
-    data: { id: "e27", source: "Mackenzie bdg", target: "Architechture bdg", weight: 49},
+    data: {
+      id: "e27",
+      source: "Mackenzie bdg",
+      target: "Architechture bdg",
+      weight: 49,
+    },
   },
   {
     group: "edges",
@@ -648,15 +718,27 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e35", source: "Glengarry/Russel Grenville", target: "Lennox/Addington" },
+    data: {
+      id: "e35",
+      source: "Glengarry/Russel Grenville",
+      target: "Lennox/Addington",
+    },
   },
   {
     group: "edges",
-    data: { id: "e36", source: "Glengarry/Russel Grenville", target: "St.Patricks/Stormont Dundas" },
+    data: {
+      id: "e36",
+      source: "Glengarry/Russel Grenville",
+      target: "St.Patricks/Stormont Dundas",
+    },
   },
   {
     group: "edges",
-    data: { id: "e37", source: "Leeds House", target: "St.Patricks/Stormont Dundas" },
+    data: {
+      id: "e37",
+      source: "Leeds House",
+      target: "St.Patricks/Stormont Dundas",
+    },
   },
   {
     group: "edges",
@@ -664,23 +746,43 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e39", source: "Maintenance bdg", target: "Carleton Tech & Training Center" },
+    data: {
+      id: "e39",
+      source: "Maintenance bdg",
+      target: "Carleton Tech & Training Center",
+    },
   },
   {
     group: "edges",
-    data: { id: "e40", source: "Nesbitt Biology bdg", target: "Carleton Tech & Training Center" },
+    data: {
+      id: "e40",
+      source: "Nesbitt Biology bdg",
+      target: "Carleton Tech & Training Center",
+    },
   },
   {
     group: "edges",
-    data: { id: "e41", source: "Nesbitt Biology bdg", target: "Robertson Hall" },
+    data: {
+      id: "e41",
+      source: "Nesbitt Biology bdg",
+      target: "Robertson Hall",
+    },
   },
   {
     group: "edges",
-    data: { id: "e42", source: "Maintenance bdg", target: "Alumni Hall Fieldhouse" },
+    data: {
+      id: "e42",
+      source: "Maintenance bdg",
+      target: "Alumni Hall Fieldhouse",
+    },
   },
   {
     group: "edges",
-    data: { id: "e43", source: "Carleton Tech & Training Center", target: "Alumni Hall Fieldhouse" },
+    data: {
+      id: "e43",
+      source: "Carleton Tech & Training Center",
+      target: "Alumni Hall Fieldhouse",
+    },
   },
   {
     group: "edges",
@@ -688,11 +790,16 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington", weight: },
+    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington" },
   },
   {
     group: "edges",
-    data: { id: "e46", source: "A-Stairs", target: "Azrieli Theater/Pavilion", weight: 27.5 },
+    data: {
+      id: "e46",
+      source: "A-Stairs",
+      target: "Azrieli Theater/Pavilion",
+      weight: 27.5,
+    },
   },
 ]);
 
