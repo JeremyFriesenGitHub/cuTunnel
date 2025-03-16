@@ -323,6 +323,8 @@ var cy = cytoscape({
   ],
 });
 
+cy.nodes().style({"font-size": 12})
+
 // add nodes and edges
 cy.add([
   {
@@ -342,7 +344,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Azrieli Theater/Pavilion" },
+    data: { id: "Azrieli Tht/Pav" },
     position: { x: 294, y: 631 },
   },
   {
@@ -357,7 +359,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Architechture bdg" },
+    data: { id: "Archit. bdg" },
     position: { x: 507, y: 517 },
   },
   {
@@ -587,12 +589,12 @@ cy.add([
     data: {
       id: "e18",
       source: "Dunton Tower",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Tht/Pav",
     },
   },
   {
     group: "edges",
-    data: { id: "e20", source: "Azrieli Theater/Pavilion", target: "Tory bdg" },
+    data: { id: "e20", source: "Azrieli Tht/Pav", target: "Tory bdg",  },
   },
   {
     group: "edges",
@@ -607,24 +609,24 @@ cy.add([
     data: {
       id: "e23",
       source: "UC (Level 1)",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Tht/Pav",
     },
   },
   {
     group: "edges",
-    data: { id: "e24", source: "UC (Level 1)", target: "Architechture bdg" },
+    data: { id: "e24", source: "UC (Level 1)", target: "Archit. bdg" },
   },
   {
     group: "edges",
-    data: { id: "e25", source: "Nicol bdg", target: "Architechture bdg" },
+    data: { id: "e25", source: "Nicol bdg", target: "Archit. bdg" },
   },
   {
     group: "edges",
-    data: { id: "e26", source: "Canal bdg", target: "Architechture bdg" },
+    data: { id: "e26", source: "Canal bdg", target: "Archit. bdg" },
   },
   {
     group: "edges",
-    data: { id: "e27", source: "Mackenzie bdg", target: "Architechture bdg" },
+    data: { id: "e27", source: "Mackenzie bdg", target: "Archit. bdg" },
   },
   {
     group: "edges",
@@ -735,11 +737,21 @@ cy.add([
     data: {
       id: "e46",
       source: "A-Stairs",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Tht/Pav",
       weight: 27.5,
     },
   },
 ]);
+
+cy.nodes().style({
+  'font-size': '10px'
+});
+
+cy.nodes().style({
+  'font-family': 'Arial, sans-serif',  // Change the font family
+  'font-weight': 'bold',  // Make the font bold
+  'font-style': ''  // Make the font italic
+});
 
 var startNode = null;
 var endNode = null;
