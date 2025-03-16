@@ -37,6 +37,12 @@ var cy = cytoscape({
       },
     },
     {
+      selector: ".orange",
+      style: {
+        backgroundColor: "red",
+      },
+    },
+    {
       selector: "edge#e23",
       style: {
         "line-style": "dashed",
@@ -323,8 +329,6 @@ var cy = cytoscape({
   ],
 });
 
-cy.nodes().style({"font-size": 12})
-
 // add nodes and edges
 cy.add([
   {
@@ -344,12 +348,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Azrieli Tht/Pav" },
+    data: { id: "Azrieli Theater/Pavilion" },
     position: { x: 294, y: 631 },
   },
   {
     group: "nodes",
-    data: { id: "Tory Bldg" },
+    data: { id: "Tory bdg" },
     position: { x: 366, y: 631 },
   },
   {
@@ -359,13 +363,14 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Archit. Bldg" },
+    data: { id: "Architechture bdg" },
     position: { x: 507, y: 517 },
   },
   {
     group: "nodes",
-    data: { id: "Nicol Bldg" },
+    data: { id: "Nicol bdg" },
     position: { x: 591, y: 517 },
+    classes: "orange",
   },
   {
     group: "nodes",
@@ -404,7 +409,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Maintenance Bldg" },
+    data: { id: "Maintenance bdg" },
     position: { x: 647, y: 621 },
   },
   {
@@ -419,7 +424,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Nesbitt Biology Bldg" },
+    data: { id: "Nesbitt Biology bdg" },
     position: { x: 730, y: 817 },
   },
   {
@@ -429,12 +434,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Canal Bldg" },
+    data: { id: "Canal bdg" },
     position: { x: 443, y: 433 },
   },
   {
     group: "nodes",
-    data: { id: "Mackenzie Bldg" },
+    data: { id: "Mackenzie bdg" },
     position: { x: 502, y: 388 },
   },
   {
@@ -625,15 +630,30 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e20", source: "Azrieli Theater/Pavilion", target: "Tory bdg" },
+    data: {
+      id: "e20",
+      source: "Azrieli Theater/Pavilion",
+      target: "Tory bdg",
+      weight: 15,
+    },
   },
   {
     group: "edges",
-    data: { id: "e21", source: "Tory bdg", target: "UC (Level 4)" },
+    data: {
+      id: "e21",
+      source: "Tory bdg",
+      target: "UC (Level 4)",
+      weight: 19.8,
+    },
   },
   {
     group: "edges",
-    data: { id: "e22", source: "UC (Level 4)", target: "UC (Level 1)", weight: 8.1 },
+    data: {
+      id: "e22",
+      source: "UC (Level 4)",
+      target: "UC (Level 1)",
+      weight: 8.1,
+    },
   },
   {
     group: "edges",
@@ -641,51 +661,107 @@ cy.add([
       id: "e23",
       source: "UC (Level 1)",
       target: "Azrieli Theater/Pavilion",
+      weight: 8.1,
     },
   },
   {
     group: "edges",
-    data: { id: "e24", source: "UC (Level 1)", target: "Architechture bdg" },
+    data: {
+      id: "e24",
+      source: "UC (Level 1)",
+      target: "Architechture bdg",
+      weight: 30.2,
+    },
   },
   {
     group: "edges",
-    data: { id: "e25", source: "Nicol bdg", target: "Architechture bdg" },
+    data: {
+      id: "e25",
+      source: "Nicol bdg",
+      target: "Architechture bdg",
+      weight: 28.1,
+    },
   },
   {
     group: "edges",
-    data: { id: "e26", source: "Canal bdg", target: "Architechture bdg" },
+    data: {
+      id: "e26",
+      source: "Canal bdg",
+      target: "Architechture bdg",
+      weight: 18.3,
+    },
   },
   {
     group: "edges",
-    data: { id: "e27", source: "Mackenzie bdg", target: "Architechture bdg" },
+    data: {
+      id: "e27",
+      source: "Mackenzie bdg",
+      target: "Architechture bdg",
+      weight: 49,
+    },
   },
   {
     group: "edges",
-    data: { id: "e28", source: "Mackenzie bdg", target: "Canal bdg" },
+    data: {
+      id: "e28",
+      source: "Mackenzie bdg",
+      target: "Canal bdg",
+      weight: 7.3,
+    },
   },
   {
     group: "edges",
-    data: { id: "e29", source: "Southam3", target: "Paterson Hall", weight: 30.2},
+    data: {
+      id: "e29",
+      source: "Southam3",
+      target: "Paterson Hall",
+      weight: 30.2,
+    },
   },
   {
     group: "edges",
-    data: { id: "e30", source: "A-Stairs", target: "Paterson Hall", weight: 15.4 },
+    data: {
+      id: "e30",
+      source: "A-Stairs",
+      target: "Paterson Hall",
+      weight: 15.4,
+    },
   },
   {
     group: "edges",
-    data: { id: "e31", source: "Nicol bdg", target: "Minto Case" },
+    data: {
+      id: "e31",
+      source: "Nicol bdg",
+      target: "Minto Case",
+      weight: 21.2,
+    },
   },
   {
     group: "edges",
-    data: { id: "e32", source: "Frontenac/Lanark", target: "Minto Case", weight: 26.4},
+    data: {
+      id: "e32",
+      source: "Frontenac/Lanark",
+      target: "Minto Case",
+      weight: 26.4,
+    },
   },
   {
     group: "edges",
-    data: { id: "e33", source: "Frontenac/Lanark", target: "Renfew/Prescott", weight: 4.4},
+    data: {
+      id: "e33",
+      source: "Frontenac/Lanark",
+      target: "Renfew/Prescott",
+      weight: 4.4,
+    },
   },
   {
     group: "edges",
-    data: { id: "e34", source: "Frontenac/Lanark", target: "Lennox/Addington", weight: 19.8},
+    data: {
+      id: "e34",
+      source: "Frontenac/Lanark",
+      target: "Lennox/Addington",
+      weight: 19.8,
+    },
   },
   {
     group: "edges",
@@ -716,13 +792,18 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e38", source: "Nicol bdg", target: "Maintenance bdg" },
+    data: {
+      id: "e38",
+      source: "Nicol bdg",
+      target: "Maintenance bdg",
+      weight: 29.3,
+    },
   },
   {
     group: "edges",
     data: {
       id: "e39",
-      source: "Maintenance Bldg",
+      source: "Maintenance bdg",
       target: "Carleton Tech & Training Center",
       weight: 35.7,
     },
@@ -731,7 +812,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e40",
-      source: "Nesbitt Biology Bldg",
+      source: "Nesbitt Biology bdg",
       target: "Carleton Tech & Training Center",
       weight: 18.3,
     },
@@ -740,7 +821,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e41",
-      source: "Nesbitt Biology Bldg",
+      source: "Nesbitt Biology bdg",
       target: "Robertson Hall",
       weight: 54.7,
     },
@@ -749,7 +830,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e42",
-      source: "Maintenance Bldg",
+      source: "Maintenance bdg",
       target: "Alumni Hall Fieldhouse",
       weight: 83.1,
     },
@@ -765,37 +846,36 @@ cy.add([
   },
   {
     group: "edges",
-    data: { id: "e44", source: "Renfew/Prescott", target: "Minto Case", weight: 26},
+    data: {
+      id: "e44",
+      source: "Renfew/Prescott",
+      target: "Minto Case",
+      weight: 26,
+    },
   },
   {
     group: "edges",
-    data: { id: "e45", source: "Renfew/Prescott", target: "Lennox/Addington", weight: 23.5},
+    data: {
+      id: "e45",
+      source: "Renfew/Prescott",
+      target: "Lennox/Addington",
+      weight: 23.5,
+    },
   },
   {
     group: "edges",
     data: {
       id: "e46",
       source: "A-Stairs",
-      target: "Azrieli Tht/Pav",
+      target: "Azrieli Theater/Pavilion",
       weight: 27.5,
     },
   },
 ]);
 
-cy.nodes().style({
-  'font-size': '10px'
-});
-
-cy.nodes().style({
-  'font-family': 'Arial, sans-serif',  // Change the font family
-  'font-weight': 'bold',  // Make the font bold
-  'font-style': ''  // Make the font italic
-});
-
 var startNode = null;
 var endNode = null;
 
-// Node click event
 cy.on("tap", "node", function (evt) {
   var node = evt.target;
 
