@@ -19,12 +19,6 @@ var cy = cytoscape({
       },
     },
     {
-      selector: ".shortest-path",
-      style: {
-        "line-color": "black",
-      },
-    },
-    {
       selector: ".start",
       style: {
         backgroundColor: "green",
@@ -372,7 +366,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Renfew/Prescott" },
+    data: { id: "Renfrew/Prescott" },
     position: { x: 647, y: 308 },
   },
   {
@@ -392,7 +386,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "St.Patricks/Stormont Dundas" },
+    data: { id: "St. Patrick's/Stormont Dundas" },
     position: { x: 740, y: 104 },
   },
   {
@@ -743,7 +737,7 @@ cy.add([
     data: {
       id: "e33",
       source: "Frontenac/Lanark",
-      target: "Renfew/Prescott",
+      target: "Renfrew/Prescott",
       weight: 13.2,
     },
   },
@@ -770,7 +764,7 @@ cy.add([
     data: {
       id: "e36",
       source: "Glengarry/Russell Grenville",
-      target: "St.Patricks/Stormont Dundas",
+      target: "St. Patrick's/Stormont Dundas",
       weight: 51.6,
     },
   },
@@ -779,7 +773,7 @@ cy.add([
     data: {
       id: "e37",
       source: "Leeds House",
-      target: "St.Patricks/Stormont Dundas",
+      target: "St. Patrick's/Stormont Dundas",
       weight: 106.5,
     },
   },
@@ -841,7 +835,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e44",
-      source: "Renfew/Prescott",
+      source: "Renfrew/Prescott",
       target: "Minto Case",
       weight: 78,
     },
@@ -850,7 +844,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e45",
-      source: "Renfew/Prescott",
+      source: "Renfrew/Prescott",
       target: "Lennox/Addington",
       weight: 70.5,
     },
@@ -910,8 +904,13 @@ function findShortestPath() {
   var path = dijkstra.pathTo(endNode);
 
   if (path.length > 0) {
-    path.addClass("shortest-path");
-
+    path.edges().forEach((edge) => {
+      edge.style({
+        "line-color": "black",
+        "target-arrow-color": "",
+        "line-style": "",
+      });
+    });
     let totalWeight = path
       .edges()
       .reduce((sum, edge) => sum + edge.data("weight"), 0);
@@ -943,7 +942,27 @@ function updateWeightDisplay(weight) {
 }
 
 function clearSelection() {
-  cy.elements().removeClass("shortest-path start end");
+  if (!startNode || !endNode) return;
+
+  var dijkstra = cy.elements().dijkstra({
+    root: startNode,
+    weight: (edge) => edge.data("weight") || 1,
+  });
+
+  var path = dijkstra.pathTo(endNode);
+
+  path.edges().forEach((edge) => {
+    edge.style({
+      "line-color": "",
+      "target-arrow-color": "",
+      "line-style": "",
+    });
+  });
+
+  cy.elements().removeClass("start end");
+
   startNode = null;
   endNode = null;
+
+  updateWeightDisplay(0);
 }
