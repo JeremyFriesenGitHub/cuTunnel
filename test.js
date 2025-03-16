@@ -37,12 +37,6 @@ var cy = cytoscape({
       },
     },
     {
-      selector: ".orange",
-      style: {
-        backgroundColor: "red",
-      },
-    },
-    {
       selector: "edge#e23",
       style: {
         "line-style": "dashed",
@@ -370,7 +364,6 @@ cy.add([
     group: "nodes",
     data: { id: "Nicol Bldg" },
     position: { x: 591, y: 517 },
-    classes: "orange",
   },
   {
     group: "nodes",
@@ -874,10 +867,10 @@ cy.add([
 ]);
 
 cy.nodes().style({
-  'font-family': 'Comforta, sans-serif',  // Change the font family
-  'font-weight': 'bold',  // Make the font bold
-  'font-style': '',  // Make the font italic
-  'font-size': '10px' //font size
+  "font-family": "Comforta, sans-serif",
+  "font-weight": "bold",
+  "font-style": "",
+  "font-size": "10px",
 });
 
 var startNode = null;
