@@ -353,7 +353,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Tory bdg" },
+    data: { id: "Tory Bldg" },
     position: { x: 366, y: 631 },
   },
   {
@@ -363,12 +363,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Architechture bdg" },
+    data: { id: "Architechture Bldg" },
     position: { x: 507, y: 517 },
   },
   {
     group: "nodes",
-    data: { id: "Nicol bdg" },
+    data: { id: "Nicol Bldg" },
     position: { x: 591, y: 517 },
     classes: "orange",
   },
@@ -409,7 +409,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Maintenance bdg" },
+    data: { id: "Maintenance Bldg" },
     position: { x: 647, y: 621 },
   },
   {
@@ -424,7 +424,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Nesbitt Biology bdg" },
+    data: { id: "Nesbitt Biology Bldg" },
     position: { x: 730, y: 817 },
   },
   {
@@ -434,12 +434,12 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Canal bdg" },
+    data: { id: "Canal Bldg" },
     position: { x: 443, y: 433 },
   },
   {
     group: "nodes",
-    data: { id: "Mackenzie bdg" },
+    data: { id: "Mackenzie Bldg" },
     position: { x: 502, y: 388 },
   },
   {
@@ -633,7 +633,7 @@ cy.add([
     data: {
       id: "e20",
       source: "Azrieli Theater/Pavilion",
-      target: "Tory bdg",
+      target: "Tory Bldg",
       weight: 15,
     },
   },
@@ -641,7 +641,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e21",
-      source: "Tory bdg",
+      source: "Tory Bldg",
       target: "UC (Level 4)",
       weight: 19.8,
     },
@@ -669,7 +669,7 @@ cy.add([
     data: {
       id: "e24",
       source: "UC (Level 1)",
-      target: "Architechture bdg",
+      target: "Architechture Bldg",
       weight: 30.2,
     },
   },
@@ -677,8 +677,8 @@ cy.add([
     group: "edges",
     data: {
       id: "e25",
-      source: "Nicol bdg",
-      target: "Architechture bdg",
+      source: "Nicol Bldg",
+      target: "Architechture Bldg",
       weight: 28.1,
     },
   },
@@ -686,8 +686,8 @@ cy.add([
     group: "edges",
     data: {
       id: "e26",
-      source: "Canal bdg",
-      target: "Architechture bdg",
+      source: "Canal Bldg",
+      target: "Architechture Bldg",
       weight: 18.3,
     },
   },
@@ -695,8 +695,8 @@ cy.add([
     group: "edges",
     data: {
       id: "e27",
-      source: "Mackenzie bdg",
-      target: "Architechture bdg",
+      source: "Mackenzie Bldg",
+      target: "Architechture Bldg",
       weight: 49,
     },
   },
@@ -704,8 +704,8 @@ cy.add([
     group: "edges",
     data: {
       id: "e28",
-      source: "Mackenzie bdg",
-      target: "Canal bdg",
+      source: "Mackenzie Bldg",
+      target: "Canal Bldg",
       weight: 7.3,
     },
   },
@@ -731,7 +731,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e31",
-      source: "Nicol bdg",
+      source: "Nicol Bldg",
       target: "Minto Case",
       weight: 21.2,
     },
@@ -794,8 +794,8 @@ cy.add([
     group: "edges",
     data: {
       id: "e38",
-      source: "Nicol bdg",
-      target: "Maintenance bdg",
+      source: "Nicol Bldg",
+      target: "Maintenance Bldg",
       weight: 29.3,
     },
   },
@@ -803,7 +803,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e39",
-      source: "Maintenance bdg",
+      source: "Maintenance Bldg",
       target: "Carleton Tech & Training Center",
       weight: 35.7,
     },
@@ -812,7 +812,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e40",
-      source: "Nesbitt Biology bdg",
+      source: "Nesbitt Biology Bldg",
       target: "Carleton Tech & Training Center",
       weight: 18.3,
     },
@@ -821,7 +821,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e41",
-      source: "Nesbitt Biology bdg",
+      source: "Nesbitt Biology Bldg",
       target: "Robertson Hall",
       weight: 54.7,
     },
@@ -830,7 +830,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e42",
-      source: "Maintenance bdg",
+      source: "Maintenance Bldg",
       target: "Alumni Hall Fieldhouse",
       weight: 83.1,
     },
