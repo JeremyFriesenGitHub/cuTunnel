@@ -348,7 +348,7 @@ cy.add([
   },
   {
     group: "nodes",
-    data: { id: "Azrieli Theater/Pavilion" },
+    data: { id: "Azrieli Theat/Pav" },
     position: { x: 294, y: 631 },
   },
   {
@@ -624,7 +624,7 @@ cy.add([
     data: {
       id: "e18",
       source: "Dunton Tower",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Theat/Pav",
       weight: 24.2,
     },
   },
@@ -632,7 +632,7 @@ cy.add([
     group: "edges",
     data: {
       id: "e20",
-      source: "Azrieli Theater/Pavilion",
+      source: "Azrieli Theat/Pav",
       target: "Tory Bldg",
       weight: 15,
     },
@@ -660,7 +660,7 @@ cy.add([
     data: {
       id: "e23",
       source: "UC (Level 1)",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Theat/Pav",
       weight: 8.1,
     },
   },
@@ -867,11 +867,21 @@ cy.add([
     data: {
       id: "e46",
       source: "A-Stairs",
-      target: "Azrieli Theater/Pavilion",
+      target: "Azrieli Theat/Pav",
       weight: 27.5,
     },
   },
 ]);
+
+cy.nodes().style({
+  'font-family': 'Comforta, sans-serif',  // Change the font family
+  'font-weight': 'bold',  // Make the font bold
+  'font-style': ''  // Make the font italic
+});
+
+cy.nodes().style({
+  'font-size': '10px'  // Adjust font size for all nodes if not already defined in the style
+});
 
 var startNode = null;
 var endNode = null;
