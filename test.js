@@ -876,11 +876,8 @@ cy.add([
 cy.nodes().style({
   'font-family': 'Comforta, sans-serif',  // Change the font family
   'font-weight': 'bold',  // Make the font bold
-  'font-style': ''  // Make the font italic
-});
-
-cy.nodes().style({
-  'font-size': '10px'  // Adjust font size for all nodes if not already defined in the style
+  'font-style': '',  // Make the font italic
+  'font-size': '10px' //font size
 });
 
 var startNode = null;
